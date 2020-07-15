@@ -8,12 +8,13 @@ This library requires Python 3.6 and above. It also requires Zomato API, flask, 
 
 ### Getting Started
 ---
-Create a virtual environment
+Create a virtual environment.
 ```
 virtualenv foodiebot
 source foodiebot/bin/activate
 ```
 
+Install all requirements.
 ```
 pip3 install r- requirements.txt
 python3 bot.py
