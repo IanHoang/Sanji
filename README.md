@@ -28,6 +28,6 @@ python3 bot.py
     * install requirements.txt
 * foodiebot.py
     * create a function that takes in the message
-    * make it Object Oriented
+    * make a class for bot and a main file
 * Put methods in cogs
 
