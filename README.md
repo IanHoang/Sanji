@@ -27,6 +27,6 @@ python3 bot.py
     * install requirements.txt
 * foodiebot.py
     * create a function that takes in the message
-    * make it Object Oriented (Classify things) Started but should fix. It runs fine but has an error. Foodiebot.py works though.
+    * make it Object Oriented
 * Put methods in cogs
 
