@@ -17,8 +17,17 @@ source foodiebot/bin/activate
 Install all requirements.
 ```
 pip3 install r- requirements.txt
-python3 bot.py
 ```
+
+Run bot and ngrock.
+```
+#for foodiebot.py
+python3 foodiebot.py
+
+#for separation of class
+python3 app.py
+```
+
 ### Workflow
 
 * Slack App
