@@ -1,0 +1,2 @@
+2020-07-17 22:32:43,033:__main__:slackeventadapter <slackeventsapi.SlackEventAdapter object at 0x10ad377f0> and slackwebclient <slack.web.client.WebClient object at 0x10ad377b8>
+2020-07-17 22:33:28,844:__main__:slackeventadapter <slackeventsapi.SlackEventAdapter object at 0x10ddab668> and slackwebclient <slack.web.client.WebClient object at 0x10ddabb38>
