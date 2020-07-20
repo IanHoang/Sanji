@@ -2,3 +2,5 @@ slackclient>=2.0.0
 slackeventsapi>=2.1.0
 Flask>=1.1.2
 requests
+zomato-distribution-api==0.2.3
+

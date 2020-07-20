@@ -1,2 +1,56 @@
 2020-07-17 22:32:43,033:__main__:slackeventadapter <slackeventsapi.SlackEventAdapter object at 0x10ad377f0> and slackwebclient <slack.web.client.WebClient object at 0x10ad377b8>
 2020-07-17 22:33:28,844:__main__:slackeventadapter <slackeventsapi.SlackEventAdapter object at 0x10ddab668> and slackwebclient <slack.web.client.WebClient object at 0x10ddabb38>
+2020-07-18 15:55:38,349:__main__:slackeventadapter <slackeventsapi.SlackEventAdapter object at 0x10ee12940> and slackwebclient <slack.web.client.WebClient object at 0x10ee12780>
+2020-07-18 15:58:38,842:__main__:slackeventadapter <slackeventsapi.SlackEventAdapter object at 0x10f0c9978> and slackwebclient <slack.web.client.WebClient object at 0x10f0c9b00>
+2020-07-18 16:00:48,608:__main__:slackeventadapter <slackeventsapi.SlackEventAdapter object at 0x1106f6780> and slackwebclient <slack.web.client.WebClient object at 0x1106f6748>
+2020-07-18 16:00:52,163:__main__:{'client_msg_id': 'f716f80f-bc42-4d94-a79e-228763d91ab4', 'type': 'message', 'text': 'hey', 'user': 'U016HRQ4SUX', 'ts': '1595106051.000600', 'team': 'T017B72Q35F', 'blocks': [{'type': 'rich_text', 'block_id': 'WNV7', 'elements': [{'type': 'rich_text_section', 'elements': [{'type': 'text', 'text': 'hey'}]}]}], 'channel': 'C016X760QLD', 'event_ts': '1595106051.000600', 'channel_type': 'channel'}
+2020-07-18 16:01:49,093:__main__:{'client_msg_id': 'ca5ab915-7c57-405d-bc67-c699a1545d40', 'type': 'message', 'text': 'hey', 'user': 'U016HRQ4SUX', 'ts': '1595105748.000200', 'team': 'T017B72Q35F', 'blocks': [{'type': 'rich_text', 'block_id': '7tX3r', 'elements': [{'type': 'rich_text_section', 'elements': [{'type': 'text', 'text': 'hey'}]}]}], 'channel': 'C016X760QLD', 'event_ts': '1595105748.000200', 'channel_type': 'channel'}
+2020-07-18 16:03:13,614:__main__:slackeventadapter <slackeventsapi.SlackEventAdapter object at 0x1055b9748> and slackwebclient <slack.web.client.WebClient object at 0x1055b9630>
+2020-07-18 16:03:18,712:__main__:{'client_msg_id': '09ad9a31-de69-4650-8b53-7643b4191f8c', 'type': 'message', 'text': 'hey', 'user': 'U016HRQ4SUX', 'ts': '1595106197.000800', 'team': 'T017B72Q35F', 'blocks': [{'type': 'rich_text', 'block_id': 'jkc=', 'elements': [{'type': 'rich_text_section', 'elements': [{'type': 'text', 'text': 'hey'}]}]}], 'channel': 'C016X760QLD', 'event_ts': '1595106197.000800', 'channel_type': 'channel'}
+2020-07-18 16:04:33,722:__main__:slackeventadapter <slackeventsapi.SlackEventAdapter object at 0x1101e07b8> and slackwebclient <slack.web.client.WebClient object at 0x1101e05f8>
+2020-07-18 16:04:37,371:__main__:{'client_msg_id': 'ec9e5c6f-fb81-4cef-85a1-4a3b0a301bb2', 'type': 'message', 'text': 'hello', 'user': 'U016HRQ4SUX', 'ts': '1595106276.001000', 'team': 'T017B72Q35F', 'blocks': [{'type': 'rich_text', 'block_id': '/q9r', 'elements': [{'type': 'rich_text_section', 'elements': [{'type': 'text', 'text': 'hello'}]}]}], 'channel': 'C016X760QLD', 'event_ts': '1595106276.001000', 'channel_type': 'channel'}
+2020-07-18 16:04:37,371:__main__:C016X760QLD
+2020-07-18 16:04:37,371:__main__:U016HRQ4SUX
+2020-07-18 16:04:37,371:__main__:hello
+2020-07-18 16:04:45,125:__main__:{'client_msg_id': '88dac932-f843-49ac-a06c-9fbd0d104bfe', 'type': 'message', 'text': 'hey', 'user': 'U016HRQ4SUX', 'ts': '1595105924.000400', 'team': 'T017B72Q35F', 'blocks': [{'type': 'rich_text', 'block_id': 'Z0Nmj', 'elements': [{'type': 'rich_text_section', 'elements': [{'type': 'text', 'text': 'hey'}]}]}], 'channel': 'C016X760QLD', 'event_ts': '1595105924.000400', 'channel_type': 'channel'}
+2020-07-18 16:04:45,125:__main__:C016X760QLD
+2020-07-18 16:04:45,125:__main__:U016HRQ4SUX
+2020-07-18 16:04:45,125:__main__:hey
+2020-07-18 20:14:21,738:__main__:slackeventadapter <slackeventsapi.SlackEventAdapter object at 0x1031097f0> and slackwebclient <slack.web.client.WebClient object at 0x103109710>
+2020-07-18 20:14:32,677:__main__:C016X760QLD
+2020-07-18 20:14:32,678:__main__:U016HRQ4SUX
+2020-07-18 20:14:32,678:__main__:hello get some food
+2020-07-18 20:23:49,705:__main__:slackeventadapter <slackeventsapi.SlackEventAdapter object at 0x10d3a1588> and slackwebclient <slack.web.client.WebClient object at 0x10d3a16a0>
+2020-07-18 20:23:57,098:__main__:slackeventadapter <slackeventsapi.SlackEventAdapter object at 0x10fc13908> and slackwebclient <slack.web.client.WebClient object at 0x10fc13a90>
+2020-07-18 20:24:06,529:__main__:C016X760QLD
+2020-07-18 20:24:06,529:__main__:U016HRQ4SUX
+2020-07-18 20:24:06,529:__main__:hello get some food
+2020-07-18 20:26:47,687:__main__:slackeventadapter <slackeventsapi.SlackEventAdapter object at 0x11047c940> and slackwebclient <slack.web.client.WebClient object at 0x11047c780>
+2020-07-18 20:26:52,828:__main__:C016X760QLD
+2020-07-18 20:26:52,828:__main__:U016HRQ4SUX
+2020-07-18 20:26:52,828:__main__:food
+2020-07-18 20:26:53,092:__main__:C016X760QLD
+2020-07-18 20:26:53,093:__main__:U016HRQ4SUX
+2020-07-18 20:26:53,093:__main__:food
+2020-07-18 20:27:53,447:__main__:C016X760QLD
+2020-07-18 20:27:53,448:__main__:U016HRQ4SUX
+2020-07-18 20:27:53,448:__main__:food
+2020-07-18 20:29:17,450:__main__:slackeventadapter <slackeventsapi.SlackEventAdapter object at 0x108400898> and slackwebclient <slack.web.client.WebClient object at 0x1084006d8>
+2020-07-18 20:29:25,136:__main__:<sanji.Sanji object at 0x108444438>
+2020-07-18 20:29:25,396:__main__:<sanji.Sanji object at 0x1084b8eb8>
+2020-07-18 20:30:25,304:__main__:<sanji.Sanji object at 0x1084d48d0>
+2020-07-18 20:32:53,217:__main__:<sanji.Sanji object at 0x1084df2e8>
+2020-07-18 20:34:38,484:__main__:slackeventadapter <slackeventsapi.SlackEventAdapter object at 0x110db8908> and slackwebclient <slack.web.client.WebClient object at 0x110db88d0>
+2020-07-18 20:34:42,253:__main__:<sanji.Sanji object at 0x110dfc4e0>
+2020-07-18 20:34:42,512:__main__:<sanji.Sanji object at 0x110e6fef0>
+2020-07-18 20:35:25,293:__main__:<sanji.Sanji object at 0x110e8e908>
+2020-07-18 20:35:42,205:__main__:<sanji.Sanji object at 0x110e99320>
+2020-07-18 20:41:11,375:__main__:slackeventadapter <slackeventsapi.SlackEventAdapter object at 0x10e2df5f8> and slackwebclient <slack.web.client.WebClient object at 0x10dd0c4e0>
+2020-07-20 09:03:06,472:__main__:slackeventadapter <slackeventsapi.SlackEventAdapter object at 0x10b68eb38> and slackwebclient <slack.web.client.WebClient object at 0x10b68eb00>
+2020-07-20 14:15:04,292:__main__:slackeventadapter <slackeventsapi.SlackEventAdapter object at 0x10b623c88> and slackwebclient <slack.web.client.WebClient object at 0x10b623f98>
+2020-07-20 14:16:26,799:__main__:slackeventadapter <slackeventsapi.SlackEventAdapter object at 0x10664ecf8> and slackwebclient <slack.web.client.WebClient object at 0x10664ef60>
+2020-07-20 17:17:55,269:__main__:slackeventadapter <slackeventsapi.SlackEventAdapter object at 0x1059745c0> and slackwebclient <slack.web.client.WebClient object at 0x105974780>
+2020-07-20 17:18:42,385:__main__:slackeventadapter <slackeventsapi.SlackEventAdapter object at 0x10e218518> and slackwebclient <slack.web.client.WebClient object at 0x10e218208>
+2020-07-20 17:22:00,608:__main__:slackeventadapter <slackeventsapi.SlackEventAdapter object at 0x1066bc588> and slackwebclient <slack.web.client.WebClient object at 0x1066bc278>
+2020-07-20 17:22:19,427:__main__:slackeventadapter <slackeventsapi.SlackEventAdapter object at 0x103d035f8> and slackwebclient <slack.web.client.WebClient object at 0x103d037b8>
+2020-07-20 17:22:45,391:__main__:slackeventadapter <slackeventsapi.SlackEventAdapter object at 0x107455518> and slackwebclient <slack.web.client.WebClient object at 0x107455208>

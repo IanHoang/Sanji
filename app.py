@@ -4,11 +4,12 @@ from slackeventsapi import SlackEventAdapter
 from flask import Flask
 import json
 from sanji import Sanji
+# import zomatopy
 import logging
 
 #create logger, set level, set handler, set formatter
 logger = logging.getLogger(__name__)
-logger.setLevel(logging.WARN)
+logger.setLevel(logging.DEBUG)
 formatter = logging.Formatter('%(asctime)s:%(name)s:%(message)s')
 
 file_handler = logging.FileHandler('app.log')
@@ -34,19 +35,20 @@ logger.warning(f"slackeventadapter {slack_event_adapter} and slackwebclient {sla
 def getMessage(payload):
     #is there a reason why event = payload["event"] doesn't work?
     #return {} if event does not exist
-    logger.warning(event = payload.get("event", {}))
-    # channel_id = event.get("channel")
-    # user_id = event.get("user")
-    # text = event.get("text")
-    # print(text)
-    # channel = event["channel"]
-    # text = event["text"]
+    event = payload["event"]
+    channel_id = event.get("channel")
+    user_id = event.get("user")
+    text = event.get("text")
 
     # #initialize Sanji
-    # bot = Sanji(channel)
-    # message = bot.handleMessage()
+    if "food" in text.lower():
+        bot = Sanji(channel_id)
+        message = bot.handleMessage()
+        response = slack_web_client.chat_postMessage(**message)
 
-    # slack_web_client.chat_postMessage(message)
+    if "austin" in text.lower():
+        bot = Sanji(channel_id)
+        message = bot.handleSuggestions()
 
 
 if __name__ == "__main__":

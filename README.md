@@ -38,5 +38,6 @@ python3 app.py
 * foodiebot.py
     * create a function that takes in the message
     * make a class for bot and a main file
+    * create a help command to show all it can do. Also, basic functionality in sanji.py. More complex features in its own classes.
 * Put methods in cogs
 
