@@ -17,6 +17,7 @@ file_handler.setFormatter(formatter)
 
 logger.addHandler(file_handler)
 
+#configure necessary tokens
 tokens = {}
 with open('configs.json') as jsonData:
     tokens = json.load(jsonData)
@@ -27,12 +28,24 @@ app = Flask(__name__)
 slack_event_adapter = SlackEventAdapter(tokens.get("SLACK_SIGNING_SECRET"), "/slack/events", app)
 #slackwebclient documentation = WebClient(TOKEN)
 slack_web_client = WebClient(token=tokens.get("SLACK_BOT_TOKEN"))
-logger.warning(f"slackeventadapter {slack_event_adapter} and slackwebclient {slack_web_client}")
+
+
+#chat with bot
+def converse(channel_id, user_id, text):
+    bot = Sanji(channel_id)
+    message = bot.interpretCall()
+    slack_web_client.chat_postMessage(**message)
+
+#show commandslist
+def handleCommandList(channel_id, user_id, text):
+    bot = Sanji(channel_id)
+    message = bot.showCommandList()
+    slack_web_client.chat_postMessage(**message)
 
 #========MESSAGE EVENTS=======
 # handle messages
 @slack_event_adapter.on("message")
-def getMessage(payload):
+def handleMessage(payload):
     #is there a reason why event = payload["event"] doesn't work?
     #return {} if event does not exist
     event = payload["event"]
@@ -41,15 +54,13 @@ def getMessage(payload):
     text = event.get("text")
 
     # #initialize Sanji
-    if "food" in text.lower():
-        bot = Sanji(channel_id)
-        message = bot.handleMessage()
-        response = slack_web_client.chat_postMessage(**message)
+    if "sanji" in text.lower():
+        converse(channel_id, user_id, text)
+        # findSuggestions(channel_id, user_id, text)
 
-    if "austin" in text.lower():
-        bot = Sanji(channel_id)
-        message = bot.handleSuggestions()
-
+    if "commands" in text.lower():
+        handleCommandList(channel_id, user_id, text)
+    
 
 if __name__ == "__main__":
     app.run(port=3000)
