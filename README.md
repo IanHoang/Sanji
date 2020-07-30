@@ -4,7 +4,7 @@ A bot for Slack that gathers information on local restaurants based on an area. 
 
 ### Requirements 
 --- 
-This library requires Python 3.6 and above. It also requires Zomato API, flask, slackclient, slackeventsapi.
+This library requires Python 3.6 and above. Third party imports are Zomato API, flask, slackclient, slackeventsapi. Slack Events API requires a request url. I used ngrock, which will provide an https link. When you restart the ngrock, make sure to go to the slack events api app settings to input a new link and reverify the link. Make sure to run ngrock on port 3000 which is the same as Python.
 
 ### Getting Started
 ---
@@ -40,4 +40,6 @@ python3 app.py
     * make a class for bot and a main file
     * create a help command to show all it can do. Also, basic functionality in sanji.py. More complex features in its own classes.
 * Put methods in cogs
+* Bring selenium web driver into this to order cabo bobs
+
 

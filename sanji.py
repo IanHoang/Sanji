@@ -1,4 +1,6 @@
 import logging 
+import json
+
 from zomato_distribution_api.zomato_wrapper import Zomato
 
 #add logging functionality
@@ -10,14 +12,14 @@ file_handler.setFormatter(formatter)
 logger.addHandler(file_handler)
 
 class Sanji:
-    ''' FoodieBot class that contains all necessary functions '''
+    '''FoodieBot class that contains basic commands and functionality.'''
 
     INTRO_BLOCK = {
         "type": "section",
         "text": {
             "type": "mrkdwn",
             "text": (
-                "*Hello! I'm Sanji *, your personal food connoisseur. :wave: \n did you want some food recommendations?"
+                "*Hello! I'm Sanji*, your personal food connoisseur. :wave: \n If you want food recommendations, go ahead let me know by typing *recommendations*."
             )
         }
     }
@@ -28,7 +30,7 @@ class Sanji:
         "text": {
             "type": "mrkdwn",
             "text": (
-                "*What can I do for ya?* :yum: \n *commands* = shows the commands list \n *food* = calls suggestions"
+                "*What can I do for ya?* :yum: \n - *commands* = shows the commands list \n - *Sanji* = introduces Sanji \n - *recommendations* = calls recommendations" 
             )
         }
     }
@@ -55,11 +57,11 @@ class Sanji:
         }
         
     #provide suggestions of places to eat
-    def handleSuggestions(self):
-        logger.debug(self.zomato.get_city_name(278))
+    def handleRecommendations(self):
         logger.debug(self.zomato.get_collections(278))
-        print(self.zomato.get_collections(278))
-
+        
+    def getCabo(self):
+        pass
 
     def showCommandList(self): 
         return {
